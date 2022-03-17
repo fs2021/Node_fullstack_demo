@@ -1,0 +1,24 @@
+import DashboardMenu from "../components/DashboardMenu";
+
+/* eslint-disable arrow-body-style */
+const DashboardScreen = {
+    after_render: () => {
+
+    },
+
+    render: () => {
+        return `
+            <div class='dashboard'>
+                ${DashboardMenu.render({selected:'dashboard'})}
+                <div class='dashboard-content'>
+                    <h1>Dashboard</h1>
+                    <div>
+                        Info and charts will be added here
+                    </div>
+                </div>
+            </div>
+        `;
+    },
+}
+
+export default DashboardScreen;
